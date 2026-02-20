@@ -1,0 +1,16 @@
+get:
+  summary: setKeepPower.cgi
+  parameters:
+    - name: enabled
+      in: query
+      schema:
+        type: string
+      example: 'yes'
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+  responses: {}
+  tags:
+    - NVR PoE 1

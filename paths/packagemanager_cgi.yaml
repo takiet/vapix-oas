@@ -1,0 +1,5 @@
+post:
+  summary: getInfo
+  responses: {}
+  tags:
+    - Package Manager 1

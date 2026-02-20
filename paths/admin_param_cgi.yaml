@@ -1,0 +1,16 @@
+get:
+  summary: Enable SSH
+  parameters:
+    - name: action
+      in: query
+      schema:
+        type: string
+      example: update
+    - name: Network.SSH.Enabled
+      in: query
+      schema:
+        type: string
+      example: 'yes'
+  responses: {}
+  tags:
+    - Legacy Parameter Handling 1

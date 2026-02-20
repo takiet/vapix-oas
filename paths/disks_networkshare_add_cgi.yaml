@@ -1,0 +1,34 @@
+get:
+  summary: Add network share
+  parameters:
+    - name: nicename
+      in: query
+      schema:
+        type: string
+      example: NetworkStorage
+    - name: share
+      in: query
+      schema:
+        type: string
+      example: share
+    - name: user
+      in: query
+      schema:
+        type: string
+      example: smbuser
+    - name: address
+      in: query
+      schema:
+        type: string
+      example: pi.local
+    - name: pass
+      in: query
+      schema:
+        type: string
+      example: samba
+  responses: {}
+  tags:
+    - Edge storage Network share API
+  description: >-
+    [VAPIX - Add network share
+    documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004528)

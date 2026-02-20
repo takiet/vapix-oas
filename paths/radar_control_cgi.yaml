@@ -1,0 +1,5 @@
+post:
+  summary: getSupportedVersions
+  responses: {}
+  tags:
+    - Radar Control 1

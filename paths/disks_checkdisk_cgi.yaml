@@ -1,0 +1,11 @@
+get:
+  summary: checkdisk
+  parameters:
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: SD_DISK
+  responses: {}
+  tags:
+    - Edge storage Disk management 1

@@ -1,0 +1,21 @@
+get:
+  summary: setrequiredfs
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: SD_DISK
+    - name: filesystem
+      in: query
+      schema:
+        type: string
+      example: ext4
+  responses: {}
+  tags:
+    - Edge storage Disk properties 1

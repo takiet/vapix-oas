@@ -1,0 +1,11 @@
+get:
+  summary: capabilities
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+  responses: {}
+  tags:
+    - Edge storage Export Recording 1

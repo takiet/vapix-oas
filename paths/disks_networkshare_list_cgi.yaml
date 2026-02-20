@@ -1,0 +1,11 @@
+get:
+  summary: List network shares
+  parameters:
+    - name: shareid
+      in: query
+      schema:
+        type: string
+      example: all
+  responses: {}
+  tags:
+    - Edge storage Network share API

@@ -1,0 +1,16 @@
+get:
+  summary: delete
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: recordinggroupid
+      in: query
+      schema:
+        type: string
+      example: xxx
+  responses: {}
+  tags:
+    - Edge storage Recording group 1

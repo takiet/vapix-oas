@@ -1,0 +1,16 @@
+get:
+  summary: lock
+  parameters:
+    - name: action
+      in: query
+      schema:
+        type: string
+      example: lock
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: SD_DISK
+  responses: {}
+  tags:
+    - Edge storage Disk management 1

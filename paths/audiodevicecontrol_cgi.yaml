@@ -1,0 +1,5 @@
+post:
+  summary: getDevicesCapabilities
+  responses: {}
+  tags:
+    - Audio Device Control 1

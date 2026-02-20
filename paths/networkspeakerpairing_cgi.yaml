@@ -1,0 +1,5 @@
+post:
+  summary: getActive
+  responses: {}
+  tags:
+    - Network Speaker Pairing 1

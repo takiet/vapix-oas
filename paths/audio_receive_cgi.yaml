@@ -1,0 +1,16 @@
+get:
+  summary: receive
+  parameters:
+    - name: audio
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: httptype
+      in: query
+      schema:
+        type: string
+      example: singlepart
+  responses: {}
+  tags:
+    - Audio 1

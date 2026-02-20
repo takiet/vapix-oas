@@ -1,0 +1,5 @@
+post:
+  summary: getNetworkInfo
+  responses: {}
+  tags:
+    - Network Settings 1

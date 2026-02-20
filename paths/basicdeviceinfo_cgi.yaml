@@ -1,0 +1,5 @@
+post:
+  summary: getAllProperties
+  responses: {}
+  tags:
+    - Basic Device Info 1

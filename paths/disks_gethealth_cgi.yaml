@@ -1,0 +1,5 @@
+get:
+  summary: gethealth
+  responses: {}
+  tags:
+    - Edge storage Disk management 1

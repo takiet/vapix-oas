@@ -1,0 +1,11 @@
+get:
+  summary: list
+  parameters:
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: all
+  responses: {}
+  tags:
+    - Edge storage Disk management 1

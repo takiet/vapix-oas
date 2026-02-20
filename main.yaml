@@ -1,0 +1,202 @@
+openapi: 3.0.0
+info:
+  title: VAPIX
+  version: 1.0.0
+  description: >-
+    # Introduction VAPIX Network video APIs is a set of application programming
+    interfaces (APIs) for configuration and management of Axis network video
+    products. [developer.axis.com/vapix/](https://developer.axis.com/vapix/)
+servers:
+  - url: 127.0.1.1/axis-cgi
+paths:
+  /apidiscovery.cgi:
+    $ref: paths/apidiscovery_cgi.yaml
+  /audiodevicecontrol.cgi:
+    $ref: paths/audiodevicecontrol_cgi.yaml
+  /audio/transmit.cgi:
+    $ref: paths/audio_transmit_cgi.yaml
+  /audio/receive.cgi:
+    $ref: paths/audio_receive_cgi.yaml
+  /basicdeviceinfo.cgi:
+    $ref: paths/basicdeviceinfo_cgi.yaml
+  /capturemode.cgi:
+    $ref: paths/capturemode_cgi.yaml
+  /secure_boot/custfwcerts.cgi:
+    $ref: paths/secure_boot_custfwcerts_cgi.yaml
+  /customhttpheader.cgi:
+    $ref: paths/customhttpheader_cgi.yaml
+  /dynamicoverlay/dynamicoverlay.cgi:
+    $ref: paths/dynamicoverlay_dynamicoverlay_cgi.yaml
+  /disks/properties/schemaversions.cgi:
+    $ref: paths/disks_properties_schemaversions_cgi.yaml
+  /disks/properties/setrequiredfs.cgi:
+    $ref: paths/disks_properties_setrequiredfs_cgi.yaml
+  /disks/properties/setcleanupmaxage.cgi:
+    $ref: paths/disks_properties_setcleanupmaxage_cgi.yaml
+  /disks/properties/setcleanuppolicy.cgi:
+    $ref: paths/disks_properties_setcleanuppolicy_cgi.yaml
+  /disks/properties/getdiskalertlevels.cgi:
+    $ref: paths/disks_properties_getdiskalertlevels_cgi.yaml
+  /disks/properties/setdiskalertlevels.cgi:
+    $ref: paths/disks_properties_setdiskalertlevels_cgi.yaml
+  /disks/properties/enablediskencryption.cgi:
+    $ref: paths/disks_properties_enablediskencryption_cgi.yaml
+  /disks/properties/disablediskencryption.cgi:
+    $ref: paths/disks_properties_disablediskencryption_cgi.yaml
+  /disks/properties/changediskpassphrase.cgi:
+    $ref: paths/disks_properties_changediskpassphrase_cgi.yaml
+  /disks/getcapabilities.cgi:
+    $ref: paths/disks_getcapabilities_cgi.yaml
+  /disks/list.cgi:
+    $ref: paths/disks_list_cgi.yaml
+  /disks/format.cgi:
+    $ref: paths/disks_format_cgi.yaml
+  /disks/checkdisk.cgi:
+    $ref: paths/disks_checkdisk_cgi.yaml
+  /disks/repair.cgi:
+    $ref: paths/disks_repair_cgi.yaml
+  /disks/mount.cgi:
+    $ref: paths/disks_mount_cgi.yaml
+  /disks/job.cgi:
+    $ref: paths/disks_job_cgi.yaml
+  /disks/lock.cgi:
+    $ref: paths/disks_lock_cgi.yaml
+  /disks/gethealth.cgi:
+    $ref: paths/disks_gethealth_cgi.yaml
+  /disks/networkshare/list.cgi:
+    $ref: paths/disks_networkshare_list_cgi.yaml
+  /disks/networkshare/add.cgi:
+    $ref: paths/disks_networkshare_add_cgi.yaml
+  /disks/networkshare/remove.cgi:
+    $ref: paths/disks_networkshare_remove_cgi.yaml
+  /disks/networkshare/bind.cgi:
+    $ref: paths/disks_networkshare_bind_cgi.yaml
+  /disks/networkshare/unbind.cgi:
+    $ref: paths/disks_networkshare_unbind_cgi.yaml
+  /disks/networkshare/test.cgi:
+    $ref: paths/disks_networkshare_test_cgi.yaml
+  /disks/networkshare/job.cgi:
+    $ref: paths/disks_networkshare_job_cgi.yaml
+  /record/recording_group/schemaversions.cgi:
+    $ref: paths/record_recording_group_schemaversions_cgi.yaml
+  /record/recording_group/create.cgi:
+    $ref: paths/record_recording_group_create_cgi.yaml
+  /record/recording_group/update.cgi:
+    $ref: paths/record_recording_group_update_cgi.yaml
+  /record/recording_group/delete.cgi:
+    $ref: paths/record_recording_group_delete_cgi.yaml
+  /record/recording_group/list.cgi:
+    $ref: paths/record_recording_group_list_cgi.yaml
+  /record/export/schemaversions.cgi:
+    $ref: paths/record_export_schemaversions_cgi.yaml
+  /record/export/capabilities.cgi:
+    $ref: paths/record_export_capabilities_cgi.yaml
+  /record/export/properties.cgi:
+    $ref: paths/record_export_properties_cgi.yaml
+  /record/export/exportrecording.cgi:
+    $ref: paths/record_export_exportrecording_cgi.yaml
+  /record/export/exporttoexternal.cgi:
+    $ref: paths/record_export_exporttoexternal_cgi.yaml
+  /record/export/getjobstatus.cgi:
+    $ref: paths/record_export_getjobstatus_cgi.yaml
+  /mqtt/event.cgi:
+    $ref: paths/mqtt_event_cgi.yaml
+  /findmydevice.cgi:
+    $ref: paths/findmydevice_cgi.yaml
+  /firmwaremanagement.cgi:
+    $ref: paths/firmwaremanagement_cgi.yaml
+  /io/portmanagement.cgi:
+    $ref: paths/io_portmanagement_cgi.yaml
+  /admin/param.cgi:
+    $ref: paths/admin_param_cgi.yaml
+  /param.cgi:
+    $ref: paths/param_cgi.yaml
+  /lightcontrol.cgi:
+    $ref: paths/lightcontrol_cgi.yaml
+  /mdnssd.cgi:
+    $ref: paths/mdnssd_cgi.yaml
+  /mediaclip.cgi:
+    $ref: paths/mediaclip_cgi.yaml
+  /playclip.cgi:
+    $ref: paths/playclip_cgi.yaml
+  /stopclip.cgi:
+    $ref: paths/stopclip_cgi.yaml
+  /mqtt/client.cgi:
+    $ref: paths/mqtt_client_cgi.yaml
+  /network_settings.cgi:
+    $ref: paths/network_settings_cgi.yaml
+  /networkspeakerpairing.cgi:
+    $ref: paths/networkspeakerpairing_cgi.yaml
+  /ntp.cgi:
+    $ref: paths/ntp_cgi.yaml
+  /nvr/poe/getportstatuses.cgi:
+    $ref: paths/nvr_poe_getportstatuses_cgi.yaml
+  /nvr/poe/getportmode.cgi:
+    $ref: paths/nvr_poe_getportmode_cgi.yaml
+  /nvr/poe/setportmode.cgi:
+    $ref: paths/nvr_poe_setportmode_cgi.yaml
+  /nvr/poe/gettotalpowerlimit.cgi:
+    $ref: paths/nvr_poe_gettotalpowerlimit_cgi.yaml
+  /nvr/poe/getkeeppower.cgi:
+    $ref: paths/nvr_poe_getkeeppower_cgi.yaml
+  /nvr/poe/setkeeppower.cgi:
+    $ref: paths/nvr_poe_setkeeppower_cgi.yaml
+  /nvr/poe/schemaversions.cgi:
+    $ref: paths/nvr_poe_schemaversions_cgi.yaml
+  /oak.cgi:
+    $ref: paths/oak_cgi.yaml
+  /opticscontrol.cgi:
+    $ref: paths/opticscontrol_cgi.yaml
+  /manageoverlayimages.cgi:
+    $ref: paths/manageoverlayimages_cgi.yaml
+  /packagemanager.cgi:
+    $ref: paths/packagemanager_cgi.yaml
+  /power-settings.cgi:
+    $ref: paths/power-settings_cgi.yaml
+  /radar/radaranalytics.cgi:
+    $ref: paths/radar_radaranalytics_cgi.yaml
+  /radar/control.cgi:
+    $ref: paths/radar_control_cgi.yaml
+  /radar/radarimage.cgi:
+    $ref: paths/radar_radarimage_cgi.yaml
+  /remotesyslog.cgi:
+    $ref: paths/remotesyslog_cgi.yaml
+  /quadviewsetup.cgi:
+    $ref: paths/quadviewsetup_cgi.yaml
+  /regionalsettings.cgi:
+    $ref: paths/regionalsettings_cgi.yaml
+  /shuttergain.cgi:
+    $ref: paths/shuttergain_cgi.yaml
+  /siren_and_light.cgi:
+    $ref: paths/siren_and_light_cgi.yaml
+  /ssh.cgi:
+    $ref: paths/ssh_cgi.yaml
+  /stitching.cgi:
+    $ref: paths/stitching_cgi.yaml
+  /streamprofile.cgi:
+    $ref: paths/streamprofile_cgi.yaml
+  /supervisedio.cgi:
+    $ref: paths/supervisedio_cgi.yaml
+  /systemready.cgi:
+    $ref: paths/systemready_cgi.yaml
+  /time.cgi:
+    $ref: paths/time_cgi.yaml
+  /upnp.cgi:
+    $ref: paths/upnp_cgi.yaml
+  /pwdgrp.cgi:
+    $ref: paths/pwdgrp_cgi.yaml
+  /videooutput2.cgi:
+    $ref: paths/videooutput2_cgi.yaml
+  /videostreamingindicator.cgi:
+    $ref: paths/videostreamingindicator_cgi.yaml
+  /viewarea/info.cgi:
+    $ref: paths/viewarea_info_cgi.yaml
+  /viewarea/configure.cgi:
+    $ref: paths/viewarea_configure_cgi.yaml
+components:
+  securitySchemes:
+    DigestAuth:
+      type: http
+      scheme: digest
+security:
+  - DigestAuth: []

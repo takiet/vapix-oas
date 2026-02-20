@@ -1,0 +1,51 @@
+get:
+  summary: add
+  parameters:
+    - name: action
+      in: query
+      description: Add user
+      schema:
+        type: string
+      example: add
+    - name: user
+      in: query
+      description: New username
+      schema:
+        type: string
+      example: testuser
+    - name: pwd
+      in: query
+      description: New password
+      schema:
+        type: string
+      example: pass
+    - name: grp
+      in: query
+      description: Primary Unix group, should be "users" for VAPIX users.
+      schema:
+        type: string
+      example: users
+    - name: sgrp
+      in: query
+      description: >-
+        Secondary Unix groups, should be chosen among "admin, operator, viewer,
+        ptz" for VAPIX users.
+      schema:
+        type: string
+      example: operator:viewer:ptz
+    - name: comment
+      in: query
+      description: Optional comment.
+      schema:
+        type: string
+      example: Test%20user
+    - name: strict_pwd
+      in: query
+      description: Set to 1 to enforce VAPIX passwod standard, only ASCII permitted.
+      schema:
+        type: integer
+      example: '1'
+  responses: {}
+  tags:
+    - User Management 1
+  description: Create a new user account.

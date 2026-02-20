@@ -1,0 +1,99 @@
+get:
+  summary: MediaClip
+  parameters:
+    - name: action
+      in: query
+      description: Play a clip
+      schema:
+        type: string
+      example: play
+    - name: media
+      in: query
+      description: >-
+        <string>Type of media when applicable. Required for action=record and
+        action=upload
+      schema:
+        type: string
+      example: audio
+    - name: location
+      in: query
+      description: <uri>Use wild card to play random clip from device location.
+      schema:
+        type: string
+      example: /etc/audioclips/*
+    - name: clip
+      in: query
+      description: <integer> index name of the clip.
+      schema:
+        type: integer
+      example: '0'
+    - name: duration
+      in: query
+      description: <1...> Duration of a media clip in seconds. Supported by action=record.
+      schema:
+        type: integer
+      example: '1'
+    - name: wait
+      in: query
+      description: >-
+        <number>Time to wait in seconds before recording. Supported by
+        action=record.
+      schema:
+        type: integer
+      example: '0'
+    - name: statusled
+      in: query
+      description: >-
+        <yes,no>  Use statusled to indicate waiting and recording. Supported by
+        action=record. Default value is yes.
+      schema:
+        type: string
+      example: 'yes'
+    - name: repeat
+      in: query
+      description: >-
+        <-1,0...> Number of times to repeat the clip, where -1 means repeat
+        forever. 0 (default) means play once (no repeat). Supported by
+        action=play. Supported only if PlayOptions include repeat
+      schema:
+        type: integer
+      example: '1'
+    - name: volume
+      in: query
+      description: >-
+        <0..100> The clip volume in percentage and linear volume scale. 0 means
+        mute. Default is 100. Supported by action=play. Only supported if
+        PlayOptions include volume.
+      schema:
+        type: integer
+      example: '20'
+  responses: {}
+  tags:
+    - Media Clip 1
+post:
+  summary: MediaClip Upload
+  parameters:
+    - name: action
+      in: query
+      description: upload = Add a new clip by uploading an audio file
+      schema:
+        type: string
+      example: upload
+    - name: media
+      in: query
+      description: >-
+        <string> Type of media when applicable. Required for action=record and
+        action=upload.
+      schema:
+        type: string
+      example: audio
+  responses: {}
+  tags:
+    - Media Clip 1
+  description: >-
+    For action=upload the POST method must be used.
+
+    the file content is provided in the HTTP body.
+
+    Audio files should be uploaded using Multipart/Form-Data as defined in RFC
+    1867.

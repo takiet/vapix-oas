@@ -1,0 +1,6 @@
+post:
+  summary: systemready
+  responses: {}
+  tags:
+    - Systemready 1
+  description: Query for system ready status.

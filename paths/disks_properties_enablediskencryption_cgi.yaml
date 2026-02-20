@@ -1,0 +1,21 @@
+get:
+  summary: enablediskencryption
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: SD_DISK
+    - name: passphrase
+      in: query
+      schema:
+        type: string
+      example: secret
+  responses: {}
+  tags:
+    - Edge storage Disk properties 1

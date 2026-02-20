@@ -1,0 +1,5 @@
+post:
+  summary: configureClient (simple)
+  responses: {}
+  tags:
+    - MQTT Client 1

@@ -1,0 +1,39 @@
+post:
+  summary: calibrate
+  responses: {}
+  tags:
+    - Optics Control 1
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            method:
+              type: string
+            apiVersion:
+              type: string
+              format: utc-millisec
+            params:
+              type: object
+              properties:
+                optics:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      opticsId:
+                        type: string
+                        format: utc-millisec
+                      zoom:
+                        type: boolean
+                      focus:
+                        type: boolean
+        example:
+          method: calibrate
+          apiVersion: '1.0'
+          params:
+            optics:
+              - opticsId: '0'
+                zoom: true
+                focus: true

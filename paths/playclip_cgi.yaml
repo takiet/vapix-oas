@@ -1,0 +1,50 @@
+get:
+  summary: PlayClip
+  parameters:
+    - name: location
+      in: query
+      description: >-
+        <uri> Location of the clip. When using the location parameter for the
+        play action, the clip parameter is not necessary. Accepts * as wildcard
+        to play a random matching clip. Supported only if PlayOptions include
+        location.
+      schema:
+        type: string
+      example: /etc/audioclips/*
+    - name: clip
+      in: query
+      description: <integer> index name of the clip.
+      schema:
+        type: integer
+      example: '9'
+    - name: repeat
+      in: query
+      description: >-
+        <-1,0,...> Number of times to repeat the clip, where -1 means repeat
+        forever. 0 (default) means play once (no repeat). Supported only if
+        PlayOptions include repeat
+      schema:
+        type: integer
+      example: '0'
+    - name: volume
+      in: query
+      description: >-
+        <0...100> The clip volume in percentage and linear volume scale. 0 means
+        mute. Default is 100. Supported only if PlayOptions include volume.
+      schema:
+        type: integer
+      example: '1'
+    - name: audiodeviceid
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: audiooutputid
+      in: query
+      schema:
+        type: integer
+      example: '0'
+  responses: {}
+  tags:
+    - Media Clip 1
+  description: "Viewers can play media clips using the playclip.cgi.\r\n\r\nAccess control:\r\nadmin, operator, viewer\r\nMethod:\r\nGET"

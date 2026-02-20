@@ -1,0 +1,5 @@
+get:
+  summary: schemaversions
+  responses: {}
+  tags:
+    - NVR PoE 1

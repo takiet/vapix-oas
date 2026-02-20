@@ -1,0 +1,16 @@
+post:
+  summary: transmit
+  parameters:
+    - name: audiodeviceid
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: audiooutputid
+      in: query
+      schema:
+        type: integer
+      example: '0'
+  responses: {}
+  tags:
+    - Audio 1

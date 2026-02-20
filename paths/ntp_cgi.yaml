@@ -1,0 +1,5 @@
+post:
+  summary: getNTPInfo
+  responses: {}
+  tags:
+    - NTP 1

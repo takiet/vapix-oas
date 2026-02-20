@@ -1,0 +1,5 @@
+post:
+  summary: getCertificateList
+  responses: {}
+  tags:
+    - Custom Firmware Certificate 1

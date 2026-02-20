@@ -1,0 +1,27 @@
+post:
+  summary: getSupportedVersions
+  responses: {}
+  tags:
+    - Video output control 1
+  description: Lists supported API versions
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            apiVersion:
+              type: string
+              format: utc-millisec
+            context:
+              type: string
+              format: color
+            method:
+              type: string
+            params:
+              type: object
+        example:
+          apiVersion: '2.0'
+          context: abc
+          method: getSupportedVersions
+          params: {}

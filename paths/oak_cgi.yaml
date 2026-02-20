@@ -1,0 +1,10 @@
+post:
+  summary: getOAK
+  responses: {}
+  tags:
+    - OAK 1
+  description: >-
+    Retrieve the device owner authentication key.
+
+    This request specifies the hidden/undocumented 'dev_api' that instructs the
+    CGI to request the OAK from the development PSK service.

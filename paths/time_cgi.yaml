@@ -1,0 +1,6 @@
+post:
+  summary: getDateTimeInfo
+  responses: {}
+  tags:
+    - Time API 1
+  description: Retrieve date and time information

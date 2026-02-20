@@ -1,0 +1,36 @@
+get:
+  summary: properties
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: SD_DISK
+    - name: recordingid
+      in: query
+      schema:
+        type: string
+      example: 20200110_081815_EC6D_ACCC8E1879EA
+    - name: starttime
+      in: query
+      schema:
+        type: string
+      example: '2020-01-10T08:18:15.928082Z'
+    - name: stoptime
+      in: query
+      schema:
+        type: string
+      example: '2020-01-10T08:19:38.161453Z'
+    - name: exportformat
+      in: query
+      schema:
+        type: string
+      example: matroska
+  responses: {}
+  tags:
+    - Edge storage Export Recording 1

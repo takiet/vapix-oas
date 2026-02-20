@@ -1,0 +1,26 @@
+get:
+  summary: setdiskwarninglevels
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: diskid
+      in: query
+      schema:
+        type: string
+      example: SD_DISK
+    - name: wear
+      in: query
+      schema:
+        type: integer
+      example: '90'
+    - name: temperature
+      in: query
+      schema:
+        type: integer
+      example: '338'
+  responses: {}
+  tags:
+    - Edge storage Disk properties 1

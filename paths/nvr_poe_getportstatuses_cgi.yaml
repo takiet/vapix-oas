@@ -1,0 +1,11 @@
+get:
+  summary: getPortStatuses
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+  responses: {}
+  tags:
+    - NVR PoE 1

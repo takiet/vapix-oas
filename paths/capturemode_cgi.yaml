@@ -1,0 +1,5 @@
+post:
+  summary: getCaptureModes
+  responses: {}
+  tags:
+    - Capture Mode 1

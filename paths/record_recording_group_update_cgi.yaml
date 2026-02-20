@@ -1,0 +1,46 @@
+get:
+  summary: update
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      example: '1'
+    - name: recordinggroupid
+      in: query
+      schema:
+        type: string
+      example: xxx
+    - name: retentiontime
+      in: query
+      schema:
+        type: integer
+      example: '168'
+    - name: streamoptions
+      in: query
+      schema:
+        type: string
+      example: resolution%3D1920x1080
+    - name: description
+      in: query
+      schema:
+        type: string
+      example: long description
+    - name: nicename
+      in: query
+      schema:
+        type: string
+      example: my group
+    - name: preduration
+      in: query
+      schema:
+        type: integer
+      example: '5'
+    - name: postduration
+      in: query
+      schema:
+        type: integer
+      example: '10'
+  responses: {}
+  tags:
+    - Edge storage Recording group 1

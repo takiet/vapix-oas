@@ -1,0 +1,23 @@
+get:
+  summary: MediaClip.MaxGroups(Max nbr of clips)
+  parameters:
+    - name: action
+      in: query
+      description: >-
+        (Required) Action can be use to list or update properties. (values:
+        list, update)
+      schema:
+        type: string
+      example: list
+    - name: group
+      in: query
+      description: (Optional) Filter properties by groups of properties.
+      schema:
+        type: string
+      example: mediaclip.maxgroups
+  responses: {}
+  tags:
+    - Legacy Parameter Handling 1
+  description: |-
+    Read-only.
+    Product/release-dependent. Check the productÃ¢â‚¬â„¢s release notes.

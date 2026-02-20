@@ -1,0 +1,5 @@
+get:
+  summary: schemaversions
+  responses: {}
+  tags:
+    - Edge storage Export Recording 1

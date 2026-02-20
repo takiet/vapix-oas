@@ -1,0 +1,5 @@
+post:
+  summary: configureEventPublication (all events)
+  responses: {}
+  tags:
+    - Event-MQTT Bridge 1

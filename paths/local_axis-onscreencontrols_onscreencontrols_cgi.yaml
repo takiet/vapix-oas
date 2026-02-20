@@ -1,0 +1,5 @@
+post:
+  summary: getAllFeatures
+  responses: {}
+  tags:
+    - On-Screen Controls 1
