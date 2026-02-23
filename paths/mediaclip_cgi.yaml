@@ -26,13 +26,13 @@ get:
       description: <integer> index name of the clip.
       schema:
         type: integer
-      example: '0'
+      example: "0"
     - name: duration
       in: query
       description: <1...> Duration of a media clip in seconds. Supported by action=record.
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: wait
       in: query
       description: >-
@@ -40,7 +40,7 @@ get:
         action=record.
       schema:
         type: integer
-      example: '0'
+      example: "0"
     - name: statusled
       in: query
       description: >-
@@ -48,7 +48,7 @@ get:
         action=record. Default value is yes.
       schema:
         type: string
-      example: 'yes'
+      example: "yes"
     - name: repeat
       in: query
       description: >-
@@ -57,7 +57,7 @@ get:
         action=play. Supported only if PlayOptions include repeat
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: volume
       in: query
       description: >-
@@ -66,10 +66,10 @@ get:
         PlayOptions include volume.
       schema:
         type: integer
-      example: '20'
+      example: "20"
   responses: {}
   tags:
-    - Media Clip 1
+    - Audio
 post:
   summary: MediaClip Upload
   parameters:
@@ -89,7 +89,7 @@ post:
       example: audio
   responses: {}
   tags:
-    - Media Clip 1
+    - Audio
   description: >-
     For action=upload the POST method must be used.
 

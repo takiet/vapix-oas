@@ -2,4 +2,4 @@ post:
   summary: getSupportedVersions
   responses: {}
   tags:
-    - Dynamic Overlay 1
+    - Dynamic Overlay

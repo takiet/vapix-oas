@@ -5,7 +5,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: recordinggroupid
       in: query
       schema:
@@ -13,4 +13,4 @@ get:
       example: xxx
   responses: {}
   tags:
-    - Edge storage Recording group 1
+    - Recording Group

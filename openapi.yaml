@@ -1,12 +1,10 @@
 openapi: 3.0.0
 info:
   title: VAPIX
-  version: 0.1.0
-  description: "VAPIX Network video APIs is a set of application programming interfaces (APIs) for configuration and management of Axis network video products. [developer.axis.com/vapix/](https://developer.axis.com/vapix/)"
+  version: 0.1.1
+  description: VAPIX Network video APIs is a set of application programming interfaces (APIs) for configuration and management of Axis network video products. [developer.axis.com/vapix/](https://developer.axis.com/vapix/)
 servers:
-  - url: 127.0.1.1/axis-cgi
-security:
-  - DigestAuth: []
+  - url: /axis-cgi
 paths:
   /apidiscovery.cgi:
     post:
@@ -20,7 +18,7 @@ paths:
       summary: getDevicesCapabilities
       responses: {}
       tags:
-        - Audio Device Control 1
+        - Audio
   /audio/transmit.cgi:
     post:
       summary: transmit
@@ -29,15 +27,15 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: audiooutputid
           in: query
           schema:
             type: integer
-          example: "0"
+          example: '0'
       responses: {}
       tags:
-        - Audio 1
+        - Audio
   /audio/receive.cgi:
     get:
       summary: receive
@@ -46,7 +44,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: httptype
           in: query
           schema:
@@ -54,44 +52,44 @@ paths:
           example: singlepart
       responses: {}
       tags:
-        - Audio 1
+        - Audio
   /basicdeviceinfo.cgi:
     post:
       summary: getAllProperties
       responses: {}
       tags:
-        - Basic Device Info 1
+        - Device
   /capturemode.cgi:
     post:
       summary: getCaptureModes
       responses: {}
       tags:
-        - Capture Mode 1
+        - Device
   /secure_boot/custfwcerts.cgi:
     post:
       summary: getCertificateList
       responses: {}
       tags:
-        - Custom Firmware Certificate 1
+        - Device
   /customhttpheader.cgi:
     post:
       summary: list
       responses: {}
       tags:
-        - Custom HTTP header 1
+        - Device
       description: Query for system ready status.
   /dynamicoverlay/dynamicoverlay.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Dynamic Overlay 1
+        - Dynamic Overlay
   /disks/properties/schemaversions.cgi:
     get:
       summary: schemaversions
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/setrequiredfs.cgi:
     get:
       summary: setrequiredfs
@@ -100,7 +98,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -113,7 +111,7 @@ paths:
           example: ext4
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/setcleanupmaxage.cgi:
     get:
       summary: setcleanupmaxage
@@ -122,7 +120,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -132,10 +130,10 @@ paths:
           in: query
           schema:
             type: integer
-          example: "7"
+          example: '7'
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/setcleanuppolicy.cgi:
     get:
       summary: setcleanuppolicy
@@ -144,7 +142,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -157,7 +155,7 @@ paths:
           example: fifo
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/getdiskalertlevels.cgi:
     get:
       summary: getdiskwarninglevels
@@ -166,7 +164,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -174,7 +172,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/setdiskalertlevels.cgi:
     get:
       summary: setdiskwarninglevels
@@ -183,7 +181,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -193,15 +191,15 @@ paths:
           in: query
           schema:
             type: integer
-          example: "90"
+          example: '90'
         - name: temperature
           in: query
           schema:
             type: integer
-          example: "338"
+          example: '338'
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/enablediskencryption.cgi:
     get:
       summary: enablediskencryption
@@ -210,7 +208,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -223,7 +221,7 @@ paths:
           example: secret
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/disablediskencryption.cgi:
     get:
       summary: disablediskencryption
@@ -232,7 +230,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -240,7 +238,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/properties/changediskpassphrase.cgi:
     get:
       summary: changediskpassphrase
@@ -249,7 +247,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -267,7 +265,7 @@ paths:
           example: secret
       responses: {}
       tags:
-        - Edge storage Disk properties 1
+        - Edge Storage
   /disks/getcapabilities.cgi:
     get:
       summary: getcapabilities
@@ -279,7 +277,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/list.cgi:
     get:
       summary: list
@@ -291,7 +289,7 @@ paths:
           example: all
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/format.cgi:
     get:
       summary: format
@@ -308,7 +306,7 @@ paths:
           example: ext4
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/checkdisk.cgi:
     get:
       summary: checkdisk
@@ -320,7 +318,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/repair.cgi:
     get:
       summary: repair
@@ -332,7 +330,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/mount.cgi:
     get:
       summary: mount
@@ -349,7 +347,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/job.cgi:
     get:
       summary: job
@@ -358,7 +356,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "47"
+          example: '47'
         - name: diskid
           in: query
           schema:
@@ -366,7 +364,7 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/lock.cgi:
     get:
       summary: lock
@@ -383,13 +381,13 @@ paths:
           example: SD_DISK
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/gethealth.cgi:
     get:
       summary: gethealth
       responses: {}
       tags:
-        - Edge storage Disk management 1
+        - Edge Storage
   /disks/networkshare/list.cgi:
     get:
       summary: List network shares
@@ -401,7 +399,7 @@ paths:
           example: all
       responses: {}
       tags:
-        - Edge storage Network share API
+        - Edge Storage
   /disks/networkshare/add.cgi:
     get:
       summary: Add network share
@@ -433,8 +431,8 @@ paths:
           example: samba
       responses: {}
       tags:
-        - Edge storage Network share API
-      description: "[VAPIX - Add network share documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004528)"
+        - Edge Storage
+      description: '[VAPIX - Add network share documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004528)'
   /disks/networkshare/remove.cgi:
     get:
       summary: Remove network share
@@ -443,11 +441,11 @@ paths:
           in: query
           schema:
             type: integer
-          example: "42461"
+          example: '42461'
       responses: {}
       tags:
-        - Edge storage Network share API
-      description: "[VAPIX - Remove network share documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004555)"
+        - Edge Storage
+      description: '[VAPIX - Remove network share documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004555)'
   /disks/networkshare/bind.cgi:
     get:
       summary: Bind network share
@@ -456,16 +454,16 @@ paths:
           in: query
           schema:
             type: string
-          example: "no"
+          example: 'no'
         - name: shareid
           in: query
           schema:
             type: integer
-          example: "22163"
+          example: '22163'
       responses: {}
       tags:
-        - Edge storage Network share API
-      description: "[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004549)"
+        - Edge Storage
+      description: '[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004549)'
   /disks/networkshare/unbind.cgi:
     get:
       summary: Unbind network share
@@ -474,11 +472,11 @@ paths:
           in: query
           schema:
             type: integer
-          example: "22558"
+          example: '22558'
       responses: {}
       tags:
-        - Edge storage Network share API
-      description: "[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004566)"
+        - Edge Storage
+      description: '[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004566)'
   /disks/networkshare/test.cgi:
     get:
       summary: Test network share
@@ -487,11 +485,11 @@ paths:
           in: query
           schema:
             type: integer
-          example: "22163"
+          example: '22163'
       responses: {}
       tags:
-        - Edge storage Network share API
-      description: "[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004576)"
+        - Edge Storage
+      description: '[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004576)'
   /disks/networkshare/job.cgi:
     get:
       summary: Job progress
@@ -500,17 +498,17 @@ paths:
           in: query
           schema:
             type: integer
-          example: "2"
+          example: '2'
       responses: {}
       tags:
-        - Edge storage Network share API
-      description: "[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004573)"
+        - Edge Storage
+      description: '[VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004573)'
   /record/recording_group/schemaversions.cgi:
     get:
       summary: schemaversions
       responses: {}
       tags:
-        - Edge storage Recording group 1
+        - Recording Group
   /record/recording_group/create.cgi:
     get:
       summary: create
@@ -519,12 +517,12 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: retentiontime
           in: query
           schema:
             type: integer
-          example: "168"
+          example: '168'
         - name: diskid
           in: query
           schema:
@@ -549,19 +547,19 @@ paths:
           in: query
           schema:
             type: integer
-          example: "5"
+          example: '5'
         - name: postduration
           in: query
           schema:
             type: integer
-          example: "10"
+          example: '10'
         - name: recordinggroupid
           in: query
           schema:
             type: string
       responses: {}
       tags:
-        - Edge storage Recording group 1
+        - Recording Group
   /record/recording_group/update.cgi:
     get:
       summary: update
@@ -570,7 +568,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: recordinggroupid
           in: query
           schema:
@@ -580,7 +578,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "168"
+          example: '168'
         - name: streamoptions
           in: query
           schema:
@@ -600,15 +598,15 @@ paths:
           in: query
           schema:
             type: integer
-          example: "5"
+          example: '5'
         - name: postduration
           in: query
           schema:
             type: integer
-          example: "10"
+          example: '10'
       responses: {}
       tags:
-        - Edge storage Recording group 1
+        - Recording Group
   /record/recording_group/delete.cgi:
     get:
       summary: delete
@@ -617,7 +615,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: recordinggroupid
           in: query
           schema:
@@ -625,7 +623,7 @@ paths:
           example: xxx
       responses: {}
       tags:
-        - Edge storage Recording group 1
+        - Recording Group
   /record/recording_group/list.cgi:
     get:
       summary: list
@@ -634,7 +632,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: recordinggroupid
           in: query
           schema:
@@ -642,13 +640,13 @@ paths:
           example: xxx
       responses: {}
       tags:
-        - Edge storage Recording group 1
+        - Recording Group
   /record/export/schemaversions.cgi:
     get:
       summary: schemaversions
       responses: {}
       tags:
-        - Edge storage Export Recording 1
+        - Edge Storage
   /record/export/capabilities.cgi:
     get:
       summary: capabilities
@@ -657,10 +655,10 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - Edge storage Export Recording 1
+        - Edge Storage
   /record/export/properties.cgi:
     get:
       summary: properties
@@ -669,7 +667,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -684,12 +682,12 @@ paths:
           in: query
           schema:
             type: string
-          example: "2020-01-10T08:18:15.928082Z"
+          example: '2020-01-10T08:18:15.928082Z'
         - name: stoptime
           in: query
           schema:
             type: string
-          example: "2020-01-10T08:19:38.161453Z"
+          example: '2020-01-10T08:19:38.161453Z'
         - name: exportformat
           in: query
           schema:
@@ -697,7 +695,7 @@ paths:
           example: matroska
       responses: {}
       tags:
-        - Edge storage Export Recording 1
+        - Edge Storage
   /record/export/exportrecording.cgi:
     get:
       summary: exportrecording
@@ -706,7 +704,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -726,12 +724,12 @@ paths:
           in: query
           schema:
             type: string
-          example: "2021-11-02T02:07:00.000Z"
+          example: '2021-11-02T02:07:00.000Z'
         - name: stoptime
           in: query
           schema:
             type: string
-          example: "2021-11-02T02:08:00.000Z"
+          example: '2021-11-02T02:08:00.000Z'
         - name: filename
           in: query
           schema:
@@ -739,7 +737,7 @@ paths:
           example: filename
       responses: {}
       tags:
-        - Edge storage Export Recording 1
+        - Edge Storage
   /record/export/exporttoexternal.cgi:
     get:
       summary: exporttoexternal
@@ -748,7 +746,7 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: diskid
           in: query
           schema:
@@ -773,12 +771,12 @@ paths:
           in: query
           schema:
             type: string
-          example: "2020-02-26T15:39:05.258216Z"
+          example: '2020-02-26T15:39:05.258216Z'
         - name: stoptime
           in: query
           schema:
             type: string
-          example: "2020-02-26T15:39:22.914614Z"
+          example: '2020-02-26T15:39:22.914614Z'
         - name: filepath
           in: query
           schema:
@@ -786,7 +784,7 @@ paths:
           example: filename
       responses: {}
       tags:
-        - Edge storage Export Recording 1
+        - Edge Storage
   /record/export/getjobstatus.cgi:
     get:
       summary: getjobstatus
@@ -795,40 +793,40 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: jobid
           in: query
           schema:
             type: integer
-          example: "0"
+          example: '0'
       responses: {}
       tags:
-        - Edge storage Export Recording 1
+        - Edge Storage
   /mqtt/event.cgi:
     post:
       summary: configureEventPublication (all events)
       responses: {}
       tags:
-        - Event-MQTT Bridge 1
+        - MQTT
   /findmydevice.cgi:
     post:
       summary: find
       responses: {}
       tags:
-        - Find My Device 1
+        - Device
       description: This is the entry point where the rest of the APIs are being discovered
   /firmwaremanagement.cgi:
     post:
       summary: status
       responses: {}
       tags:
-        - Firmware Management 1
+        - Device
   /io/portmanagement.cgi:
     post:
       summary: getPorts
       responses: {}
       tags:
-        - I/O Port Management 1
+        - I/O
       description: Retrieve all properties of available ports
   /admin/param.cgi:
     get:
@@ -843,7 +841,7 @@ paths:
           in: query
           schema:
             type: string
-          example: "yes"
+          example: 'yes'
       responses: {}
       tags:
         - Legacy Parameter Handling 1
@@ -853,7 +851,7 @@ paths:
       parameters:
         - name: action
           in: query
-          description: "(Required) Action can be use to list or update properties. (values: list, update)"
+          description: '(Required) Action can be use to list or update properties. (values: list, update)'
           schema:
             type: string
           example: list
@@ -865,7 +863,7 @@ paths:
           example: mediaclip.maxgroups
       responses: {}
       tags:
-        - Legacy Parameter Handling 1
+        - Device
       description: |-
         Read-only.
         Product/release-dependent. Check the productÃ¢â‚¬â„¢s release notes.
@@ -874,13 +872,13 @@ paths:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Light Control 1
+        - Light Control
   /mdnssd.cgi:
     post:
       summary: getMdnssdInfo
       responses: {}
       tags:
-        - mDNS-SD 1
+        - Network
   /mediaclip.cgi:
     get:
       summary: MediaClip
@@ -908,40 +906,40 @@ paths:
           description: <integer> index name of the clip.
           schema:
             type: integer
-          example: "0"
+          example: '0'
         - name: duration
           in: query
           description: <1...> Duration of a media clip in seconds. Supported by action=record.
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: wait
           in: query
           description: <number>Time to wait in seconds before recording. Supported by action=record.
           schema:
             type: integer
-          example: "0"
+          example: '0'
         - name: statusled
           in: query
           description: <yes,no>  Use statusled to indicate waiting and recording. Supported by action=record. Default value is yes.
           schema:
             type: string
-          example: "yes"
+          example: 'yes'
         - name: repeat
           in: query
           description: <-1,0...> Number of times to repeat the clip, where -1 means repeat forever. 0 (default) means play once (no repeat). Supported by action=play. Supported only if PlayOptions include repeat
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: volume
           in: query
           description: <0..100> The clip volume in percentage and linear volume scale. 0 means mute. Default is 100. Supported by action=play. Only supported if PlayOptions include volume.
           schema:
             type: integer
-          example: "20"
+          example: '20'
       responses: {}
       tags:
-        - Media Clip 1
+        - Audio
     post:
       summary: MediaClip Upload
       parameters:
@@ -959,7 +957,7 @@ paths:
           example: audio
       responses: {}
       tags:
-        - Media Clip 1
+        - Audio
       description: |-
         For action=upload the POST method must be used.
         the file content is provided in the HTTP body.
@@ -979,64 +977,64 @@ paths:
           description: <integer> index name of the clip.
           schema:
             type: integer
-          example: "9"
+          example: '9'
         - name: repeat
           in: query
           description: <-1,0,...> Number of times to repeat the clip, where -1 means repeat forever. 0 (default) means play once (no repeat). Supported only if PlayOptions include repeat
           schema:
             type: integer
-          example: "0"
+          example: '0'
         - name: volume
           in: query
           description: <0...100> The clip volume in percentage and linear volume scale. 0 means mute. Default is 100. Supported only if PlayOptions include volume.
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: audiodeviceid
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: audiooutputid
           in: query
           schema:
             type: integer
-          example: "0"
+          example: '0'
       responses: {}
       tags:
-        - Media Clip 1
+        - Audio
       description: "Viewers can play media clips using the playclip.cgi.\r\n\r\nAccess control:\r\nadmin, operator, viewer\r\nMethod:\r\nGET"
   /stopclip.cgi:
     get:
       summary: StopClip
       responses: {}
       tags:
-        - Media Clip 1
+        - Audio
       description: "Viewers can stop media clips using the stopclip.cgi.\r\n\r\nAccess control:\r\nviewer\r\nMethod:\r\nGET"
   /mqtt/client.cgi:
     post:
       summary: configureClient (simple)
       responses: {}
       tags:
-        - MQTT Client 1
+        - MQTT
   /network_settings.cgi:
     post:
       summary: getNetworkInfo
       responses: {}
       tags:
-        - Network Settings 1
+        - Network
   /networkspeakerpairing.cgi:
     post:
       summary: getActive
       responses: {}
       tags:
-        - Network Speaker Pairing 1
+        - Pairing
   /ntp.cgi:
     post:
       summary: getNTPInfo
       responses: {}
       tags:
-        - NTP 1
+        - Network
   /nvr/poe/getportstatuses.cgi:
     get:
       summary: getPortStatuses
@@ -1045,10 +1043,10 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /nvr/poe/getportmode.cgi:
     get:
       summary: getPortMode
@@ -1057,15 +1055,15 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: schemaversion
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /nvr/poe/setportmode.cgi:
     get:
       summary: setPortMode
@@ -1074,20 +1072,20 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
         - name: enabled
           in: query
           schema:
             type: string
-          example: "yes"
+          example: 'yes'
         - name: schemaversion
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /nvr/poe/gettotalpowerlimit.cgi:
     get:
       summary: getTotalPowerLimit
@@ -1096,10 +1094,10 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /nvr/poe/getkeeppower.cgi:
     get:
       summary: getKeepPower.cgi
@@ -1108,10 +1106,10 @@ paths:
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /nvr/poe/setkeeppower.cgi:
     get:
       summary: setKeepPower.cgi
@@ -1120,27 +1118,27 @@ paths:
           in: query
           schema:
             type: string
-          example: "yes"
+          example: 'yes'
         - name: schemaversion
           in: query
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /nvr/poe/schemaversions.cgi:
     get:
       summary: schemaversions
       responses: {}
       tags:
-        - NVR PoE 1
+        - NVR PoE
   /oak.cgi:
     post:
       summary: getOAK
       responses: {}
       tags:
-        - OAK 1
+        - OAK
       description: |-
         Retrieve the device owner authentication key.
         This request specifies the hidden/undocumented 'dev_api' that instructs the CGI to request the OAK from the development PSK service.
@@ -1149,7 +1147,7 @@ paths:
       summary: calibrate
       responses: {}
       tags:
-        - Optics Control 1
+        - Optics Control
       requestBody:
         content:
           application/json:
@@ -1178,10 +1176,10 @@ paths:
                             type: boolean
             example:
               method: calibrate
-              apiVersion: "1.0"
+              apiVersion: '1.0'
               params:
                 optics:
-                  - opticsId: "0"
+                  - opticsId: '0'
                     zoom: true
                     focus: true
   /manageoverlayimages.cgi:
@@ -1189,111 +1187,111 @@ paths:
       summary: supportedFormats
       responses: {}
       tags:
-        - Overlay Image 1
+        - Overlay Image
   /packagemanager.cgi:
     post:
       summary: getInfo
       responses: {}
       tags:
-        - Package Manager 1
+        - Device
   /power-settings.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Power Settings 1
+        - Device
   /radar/radaranalytics.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Radar Analytics 1
+        - Radar
   /radar/control.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Radar Control 1
+        - Radar
   /radar/radarimage.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Radar Image 1
+        - Radar
   /remotesyslog.cgi:
     post:
       summary: setup
       responses: {}
       tags:
-        - Remote Syslog 1
+        - Network
   /quadviewsetup.cgi:
     post:
       summary: getOrder
       responses: {}
       tags:
-        - Reposition Quad View Order 1
+        - Reposition Quad View Order
   /regionalsettings.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Regional Settings 1
+        - Device
   /shuttergain.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Shutter and Gain 2
+        - Optics
   /siren_and_light.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Siren and Light 1
+        - Siren and Light
   /ssh.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - SSH 1
+        - SSH
   /stitching.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Stitching 3
+        - Stitching
   /streamprofile.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Stream Profiles 1
+        - Stream Profiles
   /supervisedio.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Supervised IO 1
+        - I/O
   /systemready.cgi:
     post:
       summary: systemready
       responses: {}
       tags:
-        - Systemready 1
+        - Device
       description: Query for system ready status.
   /time.cgi:
     post:
       summary: getDateTimeInfo
       responses: {}
       tags:
-        - Time API 1
+        - Device
       description: Retrieve date and time information
   /upnp.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - UPnP 1
+        - Network
   /pwdgrp.cgi:
     get:
       summary: add
@@ -1339,17 +1337,17 @@ paths:
           description: Set to 1 to enforce VAPIX passwod standard, only ASCII permitted.
           schema:
             type: integer
-          example: "1"
+          example: '1'
       responses: {}
       tags:
-        - User Management 1
+        - User Management
       description: Create a new user account.
   /videooutput2.cgi:
     post:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Video output control 1
+        - Video Output
       description: Lists supported API versions
       requestBody:
         content:
@@ -1368,7 +1366,7 @@ paths:
                 params:
                   type: object
             example:
-              apiVersion: "2.0"
+              apiVersion: '2.0'
               context: abc
               method: getSupportedVersions
               params: {}
@@ -1377,21 +1375,17 @@ paths:
       summary: getSupportedVersions
       responses: {}
       tags:
-        - Video Streaming Indicator 1
+        - Video Streaming Indicator
   /viewarea/info.cgi:
     post:
       summary: List View Areas
       responses: {}
       tags:
-        - View Area 1
+        - View Area
   /viewarea/configure.cgi:
     post:
       summary: Set View Area Geometry
       responses: {}
       tags:
-        - View Area 1
-components:
-  securitySchemes:
-    DigestAuth:
-      type: http
-      scheme: digest
+        - View Area
+components: {}

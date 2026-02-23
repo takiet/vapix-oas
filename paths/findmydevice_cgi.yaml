@@ -2,5 +2,5 @@ post:
   summary: find
   responses: {}
   tags:
-    - Find My Device 1
+    - Device
   description: This is the entry point where the rest of the APIs are being discovered

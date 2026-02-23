@@ -2,5 +2,5 @@ post:
   summary: systemready
   responses: {}
   tags:
-    - Systemready 1
+    - Device
   description: Query for system ready status.

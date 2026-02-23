@@ -13,4 +13,4 @@ get:
       example: ext4
   responses: {}
   tags:
-    - Edge storage Disk management 1
+    - Edge Storage

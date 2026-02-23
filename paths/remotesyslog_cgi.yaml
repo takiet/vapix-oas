@@ -2,4 +2,4 @@ post:
   summary: setup
   responses: {}
   tags:
-    - Remote Syslog 1
+    - Network

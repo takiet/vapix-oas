@@ -5,7 +5,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: diskid
       in: query
       schema:
@@ -18,4 +18,4 @@ get:
       example: secret
   responses: {}
   tags:
-    - Edge storage Disk properties 1
+    - Edge Storage

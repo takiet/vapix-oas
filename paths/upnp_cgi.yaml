@@ -2,4 +2,4 @@ post:
   summary: getSupportedVersions
   responses: {}
   tags:
-    - UPnP 1
+    - Network

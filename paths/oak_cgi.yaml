@@ -2,7 +2,7 @@ post:
   summary: getOAK
   responses: {}
   tags:
-    - OAK 1
+    - OAK
   description: >-
     Retrieve the device owner authentication key.
 

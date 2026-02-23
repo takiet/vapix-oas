@@ -5,12 +5,12 @@ post:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: audiooutputid
       in: query
       schema:
         type: integer
-      example: '0'
+      example: "0"
   responses: {}
   tags:
-    - Audio 1
+    - Audio

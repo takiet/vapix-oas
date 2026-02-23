@@ -2,4 +2,4 @@ post:
   summary: getSupportedVersions
   responses: {}
   tags:
-    - Power Settings 1
+    - Device

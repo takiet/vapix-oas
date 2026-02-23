@@ -17,7 +17,7 @@ get:
       example: mediaclip.maxgroups
   responses: {}
   tags:
-    - Legacy Parameter Handling 1
+    - Device
   description: |-
     Read-only.
     Product/release-dependent. Check the productÃ¢â‚¬â„¢s release notes.

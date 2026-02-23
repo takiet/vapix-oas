@@ -2,5 +2,5 @@ post:
   summary: getDateTimeInfo
   responses: {}
   tags:
-    - Time API 1
+    - Device
   description: Retrieve date and time information

@@ -2,7 +2,7 @@ post:
   summary: calibrate
   responses: {}
   tags:
-    - Optics Control 1
+    - Optics Control
   requestBody:
     content:
       application/json:
@@ -31,9 +31,9 @@ post:
                         type: boolean
         example:
           method: calibrate
-          apiVersion: '1.0'
+          apiVersion: "1.0"
           params:
             optics:
-              - opticsId: '0'
+              - opticsId: "0"
                 zoom: true
                 focus: true

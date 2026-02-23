@@ -2,4 +2,4 @@ post:
   summary: getSupportedVersions
   responses: {}
   tags:
-    - Stitching 3
+    - Stitching

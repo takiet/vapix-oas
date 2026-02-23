@@ -2,4 +2,4 @@ post:
   summary: getSupportedVersions
   responses: {}
   tags:
-    - Supervised IO 1
+    - I/O

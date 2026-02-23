@@ -5,7 +5,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: diskid
       in: query
       schema:
@@ -15,12 +15,12 @@ get:
       in: query
       schema:
         type: integer
-      example: '90'
+      example: "90"
     - name: temperature
       in: query
       schema:
         type: integer
-      example: '338'
+      example: "338"
   responses: {}
   tags:
-    - Edge storage Disk properties 1
+    - Edge Storage

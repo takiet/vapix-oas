@@ -5,7 +5,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: diskid
       in: query
       schema:
@@ -20,12 +20,12 @@ get:
       in: query
       schema:
         type: string
-      example: '2020-01-10T08:18:15.928082Z'
+      example: "2020-01-10T08:18:15.928082Z"
     - name: stoptime
       in: query
       schema:
         type: string
-      example: '2020-01-10T08:19:38.161453Z'
+      example: "2020-01-10T08:19:38.161453Z"
     - name: exportformat
       in: query
       schema:
@@ -33,4 +33,4 @@ get:
       example: matroska
   responses: {}
   tags:
-    - Edge storage Export Recording 1
+    - Edge Storage

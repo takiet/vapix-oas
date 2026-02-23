@@ -2,5 +2,5 @@ post:
   summary: list
   responses: {}
   tags:
-    - Custom HTTP header 1
+    - Device
   description: Query for system ready status.

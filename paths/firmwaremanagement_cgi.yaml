@@ -2,4 +2,4 @@ post:
   summary: status
   responses: {}
   tags:
-    - Firmware Management 1
+    - Device

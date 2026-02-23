@@ -28,7 +28,7 @@ get:
       example: samba
   responses: {}
   tags:
-    - Edge storage Network share API
+    - Edge Storage
   description: >-
     [VAPIX - Add network share
     documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004528)

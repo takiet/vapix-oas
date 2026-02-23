@@ -8,4 +8,4 @@ get:
       example: all
   responses: {}
   tags:
-    - Edge storage Network share API
+    - Edge Storage

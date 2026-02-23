@@ -8,4 +8,4 @@ get:
       example: SD_DISK
   responses: {}
   tags:
-    - Edge storage Disk management 1
+    - Edge Storage

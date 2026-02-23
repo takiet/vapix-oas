@@ -5,12 +5,12 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: schemaversion
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
   responses: {}
   tags:
-    - NVR PoE 1
+    - NVR PoE

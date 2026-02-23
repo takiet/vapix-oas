@@ -2,5 +2,5 @@ get:
   summary: StopClip
   responses: {}
   tags:
-    - Media Clip 1
+    - Audio
   description: "Viewers can stop media clips using the stopclip.cgi.\r\n\r\nAccess control:\r\nviewer\r\nMethod:\r\nGET"

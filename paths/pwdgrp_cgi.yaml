@@ -44,8 +44,8 @@ get:
       description: Set to 1 to enforce VAPIX passwod standard, only ASCII permitted.
       schema:
         type: integer
-      example: '1'
+      example: "1"
   responses: {}
   tags:
-    - User Management 1
+    - User Management
   description: Create a new user account.

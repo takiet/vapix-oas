@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
   title: VAPIX
-  version: 1.0.0
+  version: 0.1.1
   description: >-
-    # Introduction VAPIX Network video APIs is a set of application programming
+    VAPIX Network video APIs is a set of application programming
     interfaces (APIs) for configuration and management of Axis network video
     products. [developer.axis.com/vapix/](https://developer.axis.com/vapix/)
 servers:
-  - url: 127.0.1.1/axis-cgi
+  - url: /axis-cgi
 paths:
   /apidiscovery.cgi:
     $ref: paths/apidiscovery_cgi.yaml
@@ -193,10 +193,3 @@ paths:
     $ref: paths/viewarea_info_cgi.yaml
   /viewarea/configure.cgi:
     $ref: paths/viewarea_configure_cgi.yaml
-components:
-  securitySchemes:
-    DigestAuth:
-      type: http
-      scheme: digest
-security:
-  - DigestAuth: []

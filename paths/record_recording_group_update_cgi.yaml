@@ -5,7 +5,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
     - name: recordinggroupid
       in: query
       schema:
@@ -15,7 +15,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '168'
+      example: "168"
     - name: streamoptions
       in: query
       schema:
@@ -35,12 +35,12 @@ get:
       in: query
       schema:
         type: integer
-      example: '5'
+      example: "5"
     - name: postduration
       in: query
       schema:
         type: integer
-      example: '10'
+      example: "10"
   responses: {}
   tags:
-    - Edge storage Recording group 1
+    - Recording Group

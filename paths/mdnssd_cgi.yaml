@@ -2,4 +2,4 @@ post:
   summary: getMdnssdInfo
   responses: {}
   tags:
-    - mDNS-SD 1
+    - Network

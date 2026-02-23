@@ -2,7 +2,7 @@ post:
   summary: getSupportedVersions
   responses: {}
   tags:
-    - Video output control 1
+    - Video Output
   description: Lists supported API versions
   requestBody:
     content:
@@ -21,7 +21,7 @@ post:
             params:
               type: object
         example:
-          apiVersion: '2.0'
+          apiVersion: "2.0"
           context: abc
           method: getSupportedVersions
           params: {}

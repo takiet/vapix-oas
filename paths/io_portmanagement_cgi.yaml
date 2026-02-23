@@ -2,5 +2,5 @@ post:
   summary: getPorts
   responses: {}
   tags:
-    - I/O Port Management 1
+    - I/O
   description: Retrieve all properties of available ports

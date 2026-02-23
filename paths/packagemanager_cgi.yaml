@@ -2,4 +2,4 @@ post:
   summary: getInfo
   responses: {}
   tags:
-    - Package Manager 1
+    - Device

@@ -5,7 +5,7 @@ get:
       in: query
       schema:
         type: integer
-      example: '1'
+      example: "1"
   responses: {}
   tags:
-    - Edge storage Export Recording 1
+    - Edge Storage

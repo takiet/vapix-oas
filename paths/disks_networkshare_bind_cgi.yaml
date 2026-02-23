@@ -5,14 +5,14 @@ get:
       in: query
       schema:
         type: string
-      example: 'no'
+      example: "no"
     - name: shareid
       in: query
       schema:
         type: integer
-      example: '22163'
+      example: "22163"
   responses: {}
   tags:
-    - Edge storage Network share API
+    - Edge Storage
   description: >-
     [VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004549)

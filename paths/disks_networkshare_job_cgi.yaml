@@ -5,9 +5,9 @@ get:
       in: query
       schema:
         type: integer
-      example: '2'
+      example: "2"
   responses: {}
   tags:
-    - Edge storage Network share API
+    - Edge Storage
   description: >-
     [VAPIX](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004573)

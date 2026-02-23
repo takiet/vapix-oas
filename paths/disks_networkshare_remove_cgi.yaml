@@ -5,10 +5,10 @@ get:
       in: query
       schema:
         type: integer
-      example: '42461'
+      example: "42461"
   responses: {}
   tags:
-    - Edge storage Network share API
+    - Edge Storage
   description: >-
     [VAPIX - Remove network share
     documentation](https://www.axis.com/vapix-library/subjects/t10037719/section/t10004596/display?section=t10004596-t10004555)
