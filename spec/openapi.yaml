@@ -9,6 +9,20 @@ paths:
   /apidiscovery.cgi:
     post:
       summary: getApiList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                apiVersion:
+                  type: string
+                  enum:
+                    - '1.1'
+                method:
+                  type: string
+                  enum:
+                    - getApiList
       responses: {}
       tags:
         - API Discovery 1
