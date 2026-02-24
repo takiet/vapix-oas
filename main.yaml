@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: VAPIX
-  version: 0.1.1
+  version: 0.1.2
   description: >-
     VAPIX Network video APIs is a set of application programming
     interfaces (APIs) for configuration and management of Axis network video
