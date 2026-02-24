@@ -1309,17 +1309,18 @@ paths:
                 method:
                   type: string
                   enum:
-                    - getGainMode
                     - setGainMode
+                    - getGainMode
                 params:
                   required: false
                   type: object
                   properties:
-                    gainMode: integer
-                    enum:
-                      - 0
-                      - 1
-                      - 2
+                    gainMode:
+                      type: integer
+                      enum:
+                        - 0
+                        - 1
+                        - 2
       response: {}
       tags:
         - Thermometry

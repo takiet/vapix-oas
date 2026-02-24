@@ -11,13 +11,14 @@ post:
               enum: ["1.0"]
             method:
               type: string
-              enum: ["getGainMode", "setGainMode"]
+              enum: ["setGainMode", "getGainMode"]
             params:
               required: false
               type: object
               properties:
-                gainMode: integer
-                enum: [0, 1, 2]
+                gainMode:
+                  type: integer
+                  enum: [0, 1, 2]
   response: {}
   tags:
     - Thermometry
