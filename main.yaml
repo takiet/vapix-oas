@@ -179,6 +179,8 @@ paths:
     $ref: paths/supervisedio_cgi.yaml
   /systemready.cgi:
     $ref: paths/systemready_cgi.yaml
+  /thermometry.cgi:
+    $ref: paths/thermometry_cgi.yaml
   /time.cgi:
     $ref: paths/time_cgi.yaml
   /upnp.cgi:

@@ -1293,6 +1293,37 @@ paths:
       tags:
         - Device
       description: Query for system ready status.
+  /thermometry.cgi:
+    post:
+      summary: set Gain mode
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                apiVersion:
+                  type: string
+                  enum:
+                    - '1.0'
+                method:
+                  type: string
+                  enum:
+                    - getGainMode
+                    - setGainMode
+                params:
+                  required: false
+                  type: object
+                  properties:
+                    gainMode: integer
+                    enum:
+                      - 0
+                      - 1
+                      - 2
+      response: {}
+      tags:
+        - Thermometry
+      description: 'Retrieve the current thermometric gain mode (0: auto, 1: low, 2: high)'
   /time.cgi:
     post:
       summary: getDateTimeInfo
