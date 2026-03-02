@@ -7,7 +7,7 @@ info:
     interfaces (APIs) for configuration and management of Axis network video
     products. [developer.axis.com/vapix/](https://developer.axis.com/vapix/)
 servers:
-  - url: /axis-cgi
+  - url: //axis-cgi
 paths:
   /apidiscovery.cgi:
     $ref: paths/apidiscovery_cgi.yaml
