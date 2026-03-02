@@ -1,5 +1,5 @@
 post:
-  summary: set Gain mode
+  summary: Gain mode control
   requestBody:
     content:
       application/json:
@@ -19,7 +19,21 @@ post:
                 gainMode:
                   type: integer
                   enum: [0, 1, 2]
+        examples:
+          setGainMode:
+            summary: Set mode
+            value:
+              apiVersion: "1.0"
+              method: "setGainMode"
+              params:
+                type: 1
+          getGainMode:
+            summary: Get the current mode
+            value:
+              apiVersion: "1.0"
+              method: "getGainMode"
+
   response: {}
   tags:
     - Thermometry
-  description: "Retrieve the current thermometric gain mode (0: auto, 1: low, 2: high)"
+  description: "Set the thermometric gain mode or retrieve the current mode (0: auto, 1: low, 2: high)"
