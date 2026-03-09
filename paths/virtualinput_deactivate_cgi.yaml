@@ -1,0 +1,19 @@
+get:
+  summary: Dectivate a virtual input
+  parameters:
+    - name: schemaversion
+      in: query
+      schema:
+        type: integer
+      required: true
+      example: 1
+    - name: port
+      in: query
+      schema:
+        type: integer
+      required: true
+      example: 11
+  responses: {}
+  tags:
+    - I/O
+  description: Deactivate a Virtual Input

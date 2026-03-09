@@ -195,3 +195,7 @@ paths:
     $ref: paths/viewarea_info_cgi.yaml
   /viewarea/configure.cgi:
     $ref: paths/viewarea_configure_cgi.yaml
+  /virtualinput/activate.cgi:
+    $ref: paths/virtualinput_activate_cgi.yaml
+  /virtualinput/deactivate.cgi:
+    $ref: paths/virtualinput_deactivate_cgi.yaml
